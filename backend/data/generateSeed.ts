@@ -35,8 +35,6 @@ const tickets = [
     message: "My package for order 12988 arrived crushed on one corner because of how it was boxed, is that normal?",
     reply: "It shouldn't arrive like that, and I'm sorry — that's on us for the packaging, not your fault. I've flagged it to our fulfillment team and I'm sending a replacement for order 12988 in a reinforced box, no need to return the damaged one."
   },
-
-  // --- Returns & refunds ---------------------------------------------------
   {
     category: "returns",
     message: "I want to return the jacket from order #44201, it doesn't fit. What's the process?",

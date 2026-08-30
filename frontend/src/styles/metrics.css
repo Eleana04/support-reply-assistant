@@ -1,0 +1,108 @@
+.metrics-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.metrics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.stat-card {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px;
+  border-top: 3px solid var(--ink-soft);
+}
+.stat-evidence { border-top-color: var(--evidence); }
+.stat-flag { border-top-color: var(--flag); }
+.stat-reject { border-top-color: var(--reject); }
+
+.stat-value {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.stat-label {
+  margin: 4px 0 0;
+  font-size: 12.5px;
+  color: var(--ink-soft);
+}
+
+.stat-count {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: var(--ink-soft);
+}
+
+.score-axis { margin: 40px 0 28px; }
+
+.axis-track {
+  position: relative;
+  height: 2px;
+  background: var(--line);
+  border-radius: 2px;
+}
+
+.threshold-marker, .outcome-marker {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.threshold-marker {
+  height: 100%;
+}
+.threshold-marker::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 20px;
+  background: var(--ink);
+}
+.threshold-label {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.outcome-dot {
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--paper-raised);
+}
+.outcome-tag {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10.5px;
+  white-space: nowrap;
+  color: var(--ink-soft);
+}
+
+.outcome-accepted .outcome-dot { background: var(--evidence); }
+.outcome-edited .outcome-dot { background: var(--flag); }
+.outcome-rejected .outcome-dot { background: var(--reject); }
+.outcome-flagged .outcome-dot { background: var(--ink-soft); }
+ 
+@media (max-width: 640px) {
+  .metrics-summary { grid-template-columns: repeat(2, 1fr); }
+}

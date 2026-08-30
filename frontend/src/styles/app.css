@@ -1,0 +1,99 @@
+.layout{
+  max-width:1200px;
+  margin:30px auto;
+  padding:0 20px;
+}
+
+.topbar{
+  background:white;
+  border-radius:18px;
+  padding:20px 28px;
+  margin-bottom:24px;
+  border:1px solid #E5E7EB;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+
+.logo-box{
+  width:42px;
+  height:42px;
+  border-radius:12px;
+  background:linear-gradient(135deg, #0bd629, #059669, #069d84c6, #0bd64f);
+}
+
+.logo h1{
+  margin:0;
+  font-size:28px;
+  color:#111827;
+}
+
+.logo p{
+  margin:2px 0 0;
+  color:#6B7280;
+  font-size:14px;
+}
+
+.content{
+  display:flex;
+  gap:24px;
+}
+
+.sidebar{
+  width:220px;
+  background:white;
+  border-radius:18px;
+  padding:18px;
+  border:1px solid #E5E7EB;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.menu{
+  background:#F3F4F6;
+  border:none;
+  border-radius:12px;
+  padding:14px;
+  text-align:left;
+  font-weight:600;
+  color:#374151;
+}
+
+.menu:hover{
+  background:#E5E7EB;
+}
+
+.menu.active{
+  background:#16A34A;
+  color:white;
+}
+
+.main-panel{
+  flex:1;
+  background:white;
+  border-radius:18px;
+  padding:28px;
+  border:1px solid #E5E7EB;
+  min-height:500px;
+}
+
+@media (max-width:800px){
+
+  .content{
+    flex-direction:column;
+  }
+
+  .sidebar{
+    width:100%;
+    flex-direction:row;
+  }
+
+  .menu{
+    flex:1;
+    text-align:center;
+  }
+}

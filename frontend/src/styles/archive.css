@@ -1,0 +1,76 @@
+.archive-view {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.archive-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.archive-search {
+  flex: 1;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 9px 16px;
+  color: var(--ink);
+}
+
+.archive-count {
+  color: var(--ink-soft);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.archive-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.archive-item {
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+}
+
+.archive-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.archive-category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--evidence-bg);
+  color: var(--evidence);
+  padding: 3px 8px;
+  border-radius: 999px;
+}
+
+.archive-source, .archive-date {
+  font-size: 11px;
+  color: var(--ink-soft);
+  margin-left: auto;
+}
+.archive-date { margin-left: 0; }
+
+.archive-message {
+  margin: 0 0 6px;
+  font-style: italic;
+  color: var(--ink-soft);
+}
+
+.archive-reply {
+  margin: 0;
+}
