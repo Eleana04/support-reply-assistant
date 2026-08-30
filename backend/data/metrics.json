@@ -1,0 +1,48 @@
+{
+  "acceptedUnmodified": 1,
+  "edited": 1,
+  "rejected": 0,
+  "flaggedForHuman": 6,
+  "scoreLog": [
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-27T14:30:12.061Z"
+    },
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-27T14:30:42.955Z"
+    },
+    {
+      "score": 1,
+      "outcome": "accepted",
+      "at": "2026-08-27T14:31:10.516Z"
+    },
+    {
+      "score": 1,
+      "outcome": "edited",
+      "at": "2026-08-27T14:31:43.594Z"
+    },
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-27T14:38:00.089Z"
+    },
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-30T13:48:08.675Z"
+    },
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-30T14:16:42.355Z"
+    },
+    {
+      "score": 0,
+      "outcome": "flagged",
+      "at": "2026-08-30T14:22:34.499Z"
+    }
+  ]
+}
